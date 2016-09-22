@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>关于微信小程序的理解</title>
+
+</head>
+<body>
+<h2>关于微信小程序的理解</h2>
+
+<p>昨晚开始，朋友圈里关于微信小程序的转发不断，懂技术的人表示会关注一下，不懂技术的人表示app已死，当然也有不少还是比较客观看问题的产品师。总之，微信的小程序还是引起了界内比较大的关注度，体现了其强大的影响力，不敢说其能引起一番变革，至少也能掀起一番小浪潮吧。</p>
+
+<p>本人从学生时代开始关注学习移动开发至今，深知每个技术对现实的影响，从嵌入式开发，到了解Linux、uC/OS-II、Wince、Meego、塞班、Android、iOS等系统下的软件开发，到现在与平台无关的H5开发，每项技术随着市场的需求、时代的发展不断变化，能抓住市场和用户使用的平台开发都会取的成功，不愿放弃旧技术的都会被时代淘汰。</p>
+
+<p>微信的小程序说白了就是H5开发，是基于应用程序（包括浏览器）上的次开发，与系统平台无关，与高流量的载体关系密切。基于应用上的小程序，载体应用本身的流量要足够高，粘性和系统程序相当，否则难以生存。就微信目前而言，确实具备天时地利人和，天时－现在微信用户量和活跃度几乎无对手，地利－不受系统限制，人和－国内几乎人手一号，深受喜爱。基于这个前提是其被看好的重要条件。</p>
+
+<p>张小龙年初提出这个概念时就已深受喜欢，现在到下半年，估计年底可以见到基本的产品和开发体验。为何受喜爱，受谁喜爱？对于用户来说，很多app确实没有存在的价值，占有系统太大内存，自己平时使用频度并不高，在卸载和不卸载之间纠结，如果有个不用安装的应用会方便很多。对于很多小企业来说，开发app的成本和门槛都挺高，不开发又怕跟不上时代，在开发与不开发app之间纠结。微信的小程序主要满足了这两类人的需求。而这两类人又是微信目前的主体用户，如果做得好，能不成功么，能不受欢迎么。</p>
+
+<p>如果说微信小程序仅仅是个web,为何有浏览器这个通用的平台还需要微信平台呢？从技术的角度来说，微信小程序基于微信封装后的浏览器内核实现，原理都应该一致，只是解决了不同浏览器的差异化。这一点和浏览器是一致，微信的高级在于其打通了用户的所有需求，包括帐号相关的所有服务，几乎可以满足大部分用户打开手机需要的所有功能。这一点是所有浏览器做不到的。毕竟浏览器仅仅是个通用工具而已。</p>
+
+<p>说到这里又不得不提多年来在pc端上的cs/bs模式之争。在电脑时代，一开始都是cs模式占优，随着客户端过多，出现了bs模式，不需要开发这么多客户端了。开发的客户端一般都是强调体验的才会去开发了。到目前为止，cs/bs模式几乎平分天下。但在移动端的轨迹略有不同，但结果都会一样。一开始其实是bs模式占优，尤其是android中，不少公司通过做浏览器发家，如UC。当时app开发者严重不足，移动终端自带的浏览器不能适配当时的pc网站，UC等浏览器的出现确实在适配上满足了当时的基本需求。但bs模式的下用户体验确实不够好，app开始越来越多，持续了几年，已经饱和，或许已经到巅峰，开发者也已经饱和。H5的出现，微信小程序的出现，必然会使得bs/cs模式再次在移动端平分天下，毕竟终端资源有限，而用户需求无限。</p>
+
+<p>跟上时代，顺应潮流，是移动开发者的基本要求。H5开发和基于微信平台的小程序开发对于专注移动开发者来说，又是一门必修课。</p>
+</body>
+</html>
