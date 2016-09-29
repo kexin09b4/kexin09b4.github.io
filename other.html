@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>点击</title>
+
+<script type="text/javascript">
+function openApp() {  
+//  if (/android/i.test(navigator.userAgent)) {  
+//       var isrefresh = getUrlParam('refresh'); // 获得refresh参数  
+//       alert('sss');
+//       if(isrefresh == 1) {  
+//           return  
+//       }  
+         window.location.href = 'dgSunWebApp://';  
+//       window.setTimeout(function () {  
+//               window.location.href += '&refresh=1' // 附加一个特殊参数，用来标识这次刷新不要再调用myapp:// 了  
+//       }, 500);  
+//   }  
+}  
+</script>
+</head>
+<body>
+
+<div class="main">
+	<button onclick="javascript:openApp();"> 点击打开app</button>
+</div>
+
+</body>
+</html>
